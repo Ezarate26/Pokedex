@@ -1,0 +1,20 @@
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import AccountScreen from "../screen/AccountScreen";
+
+const Stack = createStackNavigator();
+
+export default function AccountNavigation() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="AccountStack"
+        component={AccountScreen}
+        options={{
+          title: "Mi cuenta",
+          headerTitleAlign: "center",
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
