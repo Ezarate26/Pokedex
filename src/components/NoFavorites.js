@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, ImageBackground, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import {COLORS} from "../utils/constants"
+
 
 const image = { uri: "https://i.pinimg.com/564x/4e/96/4e/4e964edc0ae964bec29a3cf735477c13.jpg" }
 
