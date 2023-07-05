@@ -6,9 +6,9 @@ import {COLORS} from "../../utils/constants"
 
 export default function ItemMenu({ title, text }) {
     return (
-      <View style={styles.itemMenu}>
-        <Text style={styles.itemMenuTitle}>{title}:</Text>
-        <Text style={styles.text}>{text}</Text>
+      <View  style={styles.itemMenu}>
+        <Text testID="title" style={styles.itemMenuTitle}>{title}:</Text>
+        <Text testID="text" style={styles.text}>{text}</Text>
       </View>
     );
 }

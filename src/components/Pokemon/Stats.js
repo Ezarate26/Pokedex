@@ -20,10 +20,10 @@ export default function Stats({stats}) {
       {map(stats, (item, index) => (
         <View key={index} style={styles.block}>
           <View style={styles.blockTitle}>
-            <Text style={styles.statName}>{capitalize(item.stat.name)}</Text>
+            <Text testID="stat-name" style={styles.statName}>{capitalize(item.stat.name)}</Text>
           </View>
           <View style={styles.blockInfo}>
-            <Text style={styles.number}>{item.base_stat}</Text>
+            <Text testID="stat-value" style={styles.number}>{item.base_stat}</Text>
             <View style={styles.bgBar}>
               <View style={[styles.bar, barStyles(item.base_stat)]} />
             </View>
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     paddingBottom: 2,
-    color:COLORS.blue
+    color:COLORS.yellow
   },
   blockTitle: {
     width: "30%",

@@ -9,8 +9,7 @@ import {
   removePokemonFavoriteApi,
 } from "../../api/pokemonFavorite";
 
-export default function Favorite(props) {
-  const { id } = props;
+export default function Favorite({ id } ) {
   const [isFavorite, setIsFavorite] = useState(undefined);
   const [reloadCheck, setReloadCheck] = useState(false);
 
@@ -48,12 +47,14 @@ export default function Favorite(props) {
   };
 
   return (
+    <View testID="heart-icon" style={{width:"12%",height:"50%"} } onPress={isFavorite ? removeFavorite : addFavorite}>
     <Icon
       name="heart"
       color="#fff"
       size={20}
       onPress={isFavorite ? removeFavorite : addFavorite}
       style={{ marginRight: 20 }}
-    />
+      />
+    </View>
   );
 }

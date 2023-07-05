@@ -30,7 +30,7 @@ export default function UserData() {
         <Text style={styles.title}>Bienvenido, {`${auth.firstName} ${auth.lastName}`}</Text>
       </View>
 
-      <View style={styles.dataContent}>
+      <View testID="user-data" style={styles.dataContent}>
         <ItemMenu title="Nombre" text={`${auth.firstName} ${auth.lastName}`} />
         <ItemMenu title="Username" text={auth.username} />
         <ItemMenu title="Email" text={auth.email} />

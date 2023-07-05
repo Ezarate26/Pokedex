@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { getPokemonDetailsByUrlApi, getPokemonsApi } from "../api/pokemon";
 import PokemonList from "../components/PokemonList";
 

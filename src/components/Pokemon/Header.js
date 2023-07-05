@@ -18,7 +18,7 @@ export default function Header({ name, order, image, type }) {
           <Text style={styles.order}>#{`${order}`.padStart(3, 0)}</Text>
         </View>
         <View style={styles.contentImg}>
-          <Image source={{ uri: image }} style={styles.image} />
+          <Image source={{ uri: image }} style={styles.image} testID="pokemon-image"/>
         </View>
       </SafeAreaView>
     </View>

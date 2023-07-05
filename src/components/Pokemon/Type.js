@@ -15,7 +15,7 @@ export default function Type({ types }) {
             backgroundColor: getColorByPokemonType(item.type.name),
           }}
         >
-          <Text>{capitalize(item.type.name)}</Text>
+          <Text testID="type-name">{capitalize(item.type.name)}</Text>
         </View>
       ))}
     </View>

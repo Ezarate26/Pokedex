@@ -52,11 +52,11 @@ export default function LoginForm() {
         value={formik.values.password}
         onChangeText={(text) => formik.setFieldValue("password", text)}
       />
-      <Text onPress={formik.handleSubmit} style={styles.btnLogoun}>Iniciar sesión</Text> 
+      <Text testID="iniciar-sesion" onPress={formik.handleSubmit} style={styles.btnLogoun}>Iniciar sesión</Text> 
 
-      <Text style={styles.error}>{formik.errors.username}</Text>
-      <Text style={styles.error}>{formik.errors.password}</Text>
-      <Text style={styles.error}>{error}</Text>
+      <Text testID="userRequired" style={styles.error}>{formik.errors.username}</Text>
+      <Text testID="passwordRequired" style={styles.error}>{formik.errors.password}</Text>
+      <Text testID="error" style={styles.error}>{error}</Text>
     </View>
   );
 }
